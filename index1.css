@@ -1,0 +1,106 @@
+@font-face {
+    font-family:"Regular";
+    src:url(font/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2);
+}
+@font-face {
+    font-family:'Variable';
+    src:url(https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2);
+}
+@font-face {
+    font-family: "Bold";
+    src:url(font/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2);
+}
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body{
+    overflow-x: hidden; 
+    background-color: black; 
+}
+.header-section{
+    top: 0;
+    left:0;
+    right:0;
+    position:fixed;  
+    /* margin-top:10px; */
+    width:100%;
+    /* padding:16px; */
+} 
+.main-heading{
+    margin-top: 56px;
+}
+.main{
+    display:flex; 
+    padding: 16px; 
+    justify-content: space-between; 
+    width:100%;
+    box-sizing:border-box; 
+    height:56px; 
+    /* background-color:rgba(0,0,0,0.5); */
+}
+
+.button{
+    background-color:#fff;
+    width:93.22px;
+    height:32px;
+    font-weight:600;
+    border-radius: 28px;
+    border:none;
+    font-family: 'Variable';
+    letter-spacing: -0.01px;
+    font-size:13px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-4px);
+}
+.open-button{
+    padding-top:-16px
+}
+.menu-logos{
+    display:flex;
+    gap:16px;
+    padding:0px;
+}
+.heading{
+    color:white;
+    font-size: 1.25rem;
+    font-family: Variable;
+    padding: 16px;
+    align-items: center;
+    font-weight: 700;
+    margin-bottom: 12px;
+    margin-top:24px;
+}
+.main-heading{
+    /* margin-top:14px; */
+    letter-spacing:-0.02px;
+    margin-bottom: 12px;
+    margin-top:24px;
+}
+.scroll-card-song{
+
+}
+.scroll{
+    display:grid;
+    grid-template-columns: repeat(20, 1fr);
+    column-gap: 18px;
+    overflow: scroll;
+}
+.card {
+    min-width: 150px;
+}
+.card img{
+    width:152px;
+    height:152px;
+    object-fit: cover;
+    border-radius:4px;
+}
+.card p{
+    font-size:16px;
+    color:white;
+    font-family:Regular;
+    min-width:150px;
+}
