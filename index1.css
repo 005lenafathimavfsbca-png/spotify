@@ -14,33 +14,27 @@
     margin:0px;
     padding:0px;
     box-sizing:border-box;
+    background-color: #121212;
 }
 body{
     overflow-x: hidden; 
-    background-color: black; 
 }
 .header-section{
     top: 0;
     left:0;
     right:0;
     position:fixed;  
-    /* margin-top:10px; */
     width:100%;
-    /* padding:16px; */
+    padding:16px 16px 8px 16px; 
+    background-color: #000000;
 } 
-.main-heading{
-    margin-top: 56px;
-}
 .main{
     display:flex; 
-    padding: 16px; 
     justify-content: space-between; 
     width:100%;
     box-sizing:border-box; 
-    height:56px; 
-    /* background-color:rgba(0,0,0,0.5); */
+    background-color: #000000;
 }
-
 .button{
     background-color:#fff;
     width:93.22px;
@@ -48,7 +42,7 @@ body{
     font-weight:600;
     border-radius: 28px;
     border:none;
-    font-family: 'Variable';
+    font-family: 'bold';
     letter-spacing: -0.01px;
     font-size:13px;
     display:flex;
@@ -56,15 +50,11 @@ body{
     justify-content: center;
     transform: translateY(-4px);
 }
-.open-button{
-    padding-top:-16px
-}
 .menu-logos{
     display:flex;
     gap:16px;
-    padding:0px;
 }
-.heading{
+/* .heading{
     color:white;
     font-size: 1.25rem;
     font-family: Variable;
@@ -76,12 +66,9 @@ body{
 }
 .main-heading{
     /* margin-top:14px; */
-    letter-spacing:-0.02px;
+    /* letter-spacing:-0.02px;
     margin-bottom: 12px;
     margin-top:24px;
-}
-.scroll-card-song{
-
 }
 .scroll{
     display:grid;
@@ -103,4 +90,5 @@ body{
     color:white;
     font-family:Regular;
     min-width:150px;
-}
+} */ 
+ @media screen and (min-width: 960px)
