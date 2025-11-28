@@ -12,37 +12,28 @@
     font-family: "Bold";
     src: url(font/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2);
 }
-
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* background-color: #121212; */
 }
-
 .header-section {
-    top: 0;
-    left: 0;
-    right: 0;
     position: fixed;
     width: 100%;
     padding: 16px 16px 8px 16px;
     background-color: #000000;
 }
-
 .header-content {
     display: flex;
     justify-content: space-between;
     width: 100%;
     background-color: #000000;
 }
-
 .header-actions {
     display: flex;
     gap: 16px;
 }
-
-.button {
+.open-button {
     background-color: #fff;
     width: 93.22px;
     height: 32px;
@@ -54,7 +45,6 @@
     font-size: 13px;
     margin-top:-4px;
 }
-
 .menu-logos {
     display: flex;
     gap: 16px;
