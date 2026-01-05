@@ -49,6 +49,9 @@
   display: flex;
   gap: 16px;
 }
+.desktop-header{
+  display:none;
+}
 @media screen and (min-width: 960px) {
   .header-section {
     display: none;
@@ -145,7 +148,6 @@
     gap: 8px;
     padding: 0px 0px 2px 0px;
   }
-
   .center button {
     background: transparent;
     border: none;
@@ -157,7 +159,6 @@
   .center button:hover {
     color: #fff;
   }
-
   .action {
     font-size: 14px;
     font-family: "Bold";
@@ -226,33 +227,4 @@
   .box{
     padding:3px 0px 3px 0px;
   }
-}
-@media screen and (min-width: 1077px) {
- .input{
-  overflow: visible;
-  text-overflow: clip;
- }
- .search-img{
-  padding: 0px 0px 3px 9px;
- }
-}
-
-@media screen and (min-width: 1214px) {
-  .search-icon-btn {
-    display: none;
-  }
-  .icon-btn-search{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 0 3px;
-    width:470px;
-    border-radius: 20px; 
-  }
-  .input{
-    padding:0px 162px 3px 0px ;
-  }
-}
-@media screen and (min-width: 1920px) {
-  
 }
