@@ -189,7 +189,6 @@
     display:none;
   }
   .icon-btn-search {
-    /* flex: 1; */
     width: 327px; 
     display: flex; 
     align-items: center; 
