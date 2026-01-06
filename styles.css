@@ -17,7 +17,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
-.header-section {
+.header-content {
   position: fixed;
   width: 100%;
   padding: 16px 16px 8px 16px;
@@ -45,11 +45,11 @@
   display: flex;
   gap: 16px;
 }
-.desktop-header{
-  display:none;
+.desktop-header {
+  display: none;
 }
 @media screen and (min-width: 960px) {
-  .header-section {
+  .header-content {
     display: none;
   }
 
@@ -110,7 +110,7 @@
     background-color: #fff;
     height: 25px;
     width: 1px;
-    margin:12px;
+    margin: 12px;
   }
   .right-section {
     width: 100%;
@@ -177,49 +177,75 @@
     display: none;
   }
 }
-@media screen and (min-width: 1069px){
-  .icon-btn-search{
-    display:block;
+@media screen and (min-width: 1069px) {
+  .icon-btn-search {
+    display: block;
   }
-  .search-icon-btn{
-    display:none;
+  .search-icon-btn {
+    display: none;
   }
   .icon-btn-search {
-    width: 327px; 
-    display: flex; 
-    align-items: center; 
-    gap: 6px; 
-    padding: 8px 15px 11px 15px; 
-    border-radius: 25px; 
-    height:48px;
+    width: 327px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 15px 11px 15px;
+    border-radius: 25px;
+    height: 48px;
   }
   .search {
     color: #b3b3b3;
-    padding: 8px 0px 10px 3px;  
+    padding: 8px 0px 10px 3px;
     font-size: 16px;
     font-family: "Regular";
   }
-  .input{
-    width:186px;  
-    white-space: nowrap;  
+  .input {
+    width: 186px;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding-right: 25px;  
-    flex: 1; 
+    padding-right: 25px;
+    flex: 1;
     color: #ffffff;
   }
   .search-icon-btn {
-     display: none;
+    display: none;
   }
-  .nav-line{
+  .nav-line {
     height: 25px;
-    width: 1px; 
-    margin:10px;
-    display:flex;
-    flex-shrink:0; 
-    border:1px solid #737373; 
+    width: 1px;
+    margin: 10px;
+    display: flex;
+    flex-shrink: 0;
+    border: 1px solid #737373;
   }
-  .box{
-    padding:3px 0px 3px 0px;
+  .box {
+    padding: 3px 0px 3px 0px;
+  }
+}
+@media screen and (min-width: 1077px) {
+  .input {
+    overflow: visible;
+    text-overflow: clip;
+  }
+  .search-img {
+    padding: 0px 0px 3px 9px;
+  }
+}
+
+@media screen and (min-width: 1214px) {
+  .search-icon-btn {
+    display: none;
+  }
+  .icon-btn-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 3px;
+    width: 470px;
+    border-radius: 20px;
+  }
+  .input {
+    padding: 0px 162px 3px 0px;
   }
 }
