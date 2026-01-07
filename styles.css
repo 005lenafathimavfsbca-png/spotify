@@ -22,12 +22,8 @@
   width: 100%;
   padding: 16px 16px 8px 16px;
   background-color: #000000;
-}
-.header-content {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  background-color: #000000;
 }
 .header-actions {
   display: flex;
