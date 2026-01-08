@@ -96,6 +96,7 @@
     border-radius: 50%;
     border: none;
     background-color: #1f1f1f;
+    gap:10px;
   }
   .center-section {
     display: flex;
@@ -106,11 +107,11 @@
     text-decoration: none;
     font-family: "Bold";
   }
-  .divider {
-    background-color: #fff;
-    height: 25px;
-    width: 1px;
-    margin: 12px;
+  .install-part{
+    padding-left: 12px;
+    padding-right: 4px;
+    border-left: 1px solid #7c7c7c;
+    margin:16px;
   }
   .right-section {
     width: 100%;
@@ -119,7 +120,6 @@
     font-size: 15px;
     justify-content: flex-end;
   }
-
   .login-btn {
     background-color: #fff;
     color: #000;
@@ -188,14 +188,13 @@
     width: 327px;
     display: flex;
     align-items: center;
-    gap: 6px;
     padding: 8px 15px 11px 15px;
     border-radius: 25px;
     height: 48px;
   }
   .search {
     color: #b3b3b3;
-    padding: 8px 0px 10px 3px;
+    padding: 8px 12px 10px 0px;
     font-size: 16px;
     font-family: "Regular";
   }
