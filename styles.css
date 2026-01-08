@@ -17,7 +17,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
-.header-content {
+.header-section {
   position: fixed;
   width: 100%;
   padding: 16px 16px 8px 16px;
@@ -49,7 +49,7 @@
   display: none;
 }
 @media screen and (min-width: 960px) {
-  .header-content {
+  .header-section {
     display: none;
   }
 
@@ -106,7 +106,7 @@
     text-decoration: none;
     font-family: "Bold";
   }
-  .line {
+  .divider {
     background-color: #fff;
     height: 25px;
     width: 1px;
@@ -169,7 +169,7 @@
     gap: 8px;
     align-items: center;
   }
-  .all {
+  .right-actions {
     display: flex;
     padding: 0px 0px 0px 12px;
   }
@@ -211,16 +211,10 @@
   .search-icon-btn {
     display: none;
   }
-  .nav-line {
-    height: 25px;
-    width: 1px;
-    margin: 10px;
-    display: flex;
-    flex-shrink: 0;
-    border: 1px solid #737373;
-  }
   .box {
-    padding: 3px 0px 3px 0px;
+    padding-left: 12px;
+    padding-right: 4px;
+    border-left: 1px solid #7c7c7c;
   }
 }
 @media screen and (min-width: 1077px) {
@@ -247,5 +241,14 @@
   }
   .input {
     padding: 0px 162px 3px 0px;
+  }
+}
+@media screen and (min-width: 1723px) {
+  .icon-btns {
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    justify-content: center;
   }
 }
