@@ -63,23 +63,23 @@
     margin: 0px;
     height: 64px;
   }
-  .logo {
+  .header__logo {
     width: 32px;
     height: 32px;
     margin: 8px 20px 20px 20px;
   }
-  .icon-btns {
+  .header__nav {
     display: flex;
     gap: 8px;
     align-items: center;
     padding: 0px 8px;
   }
-  .icon-btn img {
+  .header__icon img {
     background-color: #1f1f1f;
     justify-content: center;
     align-items: center;
   }
-  .icon-btn {
+  .header__icon {
     padding: 12px;
     border-radius: 50%;
     border: none;
@@ -96,9 +96,8 @@
     border-radius: 50%;
     border: none;
     background-color: #1f1f1f;
-    gap:10px;
   }
-  .center-section {
+  .header__links {
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -107,19 +106,20 @@
     text-decoration: none;
     font-family: "Bold";
   }
-  .install-part{
-    padding-left: 12px;
-    padding-right: 4px;
-    border-left: 1px solid #7c7c7c;
-    margin:16px;
+  .horizontal-line {
+    background-color: #fff;
+    height: 25px;
+    width: 1px;
+    margin: 12px;
   }
-  .right-section {
+  .header__right {
     width: 100%;
     display: flex;
     align-items: center;
     font-size: 15px;
     justify-content: flex-end;
   }
+
   .login-btn {
     background-color: #fff;
     color: #000;
@@ -130,7 +130,7 @@
     cursor: pointer;
     font-size: 16px;
   }
-  .actions {
+  .install-app-button {
     font-size: 14px;
     font-family: "Bold";
     padding: 0px 16px 0px 0px;
@@ -138,13 +138,14 @@
     background-color: #000;
     color: #b3b3b3;
   }
-  .center {
+  .header__menu {
     display: flex;
     align-items: center;
     gap: 8px;
     padding: 0px 0px 2px 0px;
   }
-  .center button {
+
+  .header__menu .header__menu-btn {
     background: transparent;
     border: none;
     font-family: "Bold";
@@ -152,10 +153,11 @@
     font-size: 16px;
     cursor: pointer;
   }
-  .center button:hover {
+  .header__menu .header__menu-btn:hover {
     color: #fff;
   }
-  .action {
+
+  .sign-up-button {
     font-size: 14px;
     font-family: "Bold";
     padding: 0px 16px 2px 0px;
@@ -163,13 +165,13 @@
     color: #b3b3b3;
     border: none;
   }
-  .install-part {
+  .install-app-button-container {
     padding: 0px 16px 2px 24px;
     display: flex;
     gap: 8px;
     align-items: center;
   }
-  .right-actions {
+  .header__actions {
     display: flex;
     padding: 0px 0px 0px 12px;
   }
@@ -188,44 +190,60 @@
     width: 327px;
     display: flex;
     align-items: center;
-    padding: 8px 15px 11px 15px;
+    gap: 6px;
+    padding: 8px 15px 12px 15px;
     border-radius: 25px;
     height: 48px;
   }
-  .search {
-    color: #b3b3b3;
-    padding: 8px 12px 10px 0px;
-    font-size: 16px;
-    font-family: "Regular";
+  .header__search {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
-  .input {
-    width: 186px;
+  .header__search input {
+    background-color: transparent;
+    border: none;
+    padding-left: 3px;
+    padding-top: 2px;
+    min-width: 185px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding-right: 25px;
-    flex: 1;
-    color: #ffffff;
+    padding-right: 51px;
   }
-  .search-icon-btn {
-    display: none;
+  .header__search input::placeholder {
+    font-family: "Regular";
+    width: 186px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #b3b3b3;
   }
-  .box {
+  .header__search img {
     padding-left: 12px;
     padding-right: 4px;
     border-left: 1px solid #7c7c7c;
   }
 }
 @media screen and (min-width: 1077px) {
-  .input {
+  .header__search input {
     overflow: visible;
     text-overflow: clip;
   }
-  .search-img {
-    padding: 0px 0px 3px 9px;
+  .header__search input::placeholder {
+    font-family: "Regular";
+    width: 210px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #b3b3b3;
+  }
+  .header__search input {
+    min-width: 210px;
+  }
+  .icon-btn-search {
+    width: 336px;
   }
 }
-
 @media screen and (min-width: 1214px) {
   .search-icon-btn {
     display: none;
@@ -234,16 +252,16 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 0 3px;
+    padding: 0 13px;
     width: 470px;
     border-radius: 20px;
   }
-  .input {
+  .header__search input {
     padding: 0px 162px 3px 0px;
   }
 }
 @media screen and (min-width: 1723px) {
-  .icon-btns {
+  .header__nav {
     padding: 0;
     position: absolute;
     left: 0;
