@@ -215,7 +215,7 @@
   }
   .header-search img {
     padding-left: 12px;
-    padding-right: 4px;
+    padding-bottom: 1px;
     border-left: 1px solid #7c7c7c;
   }
 }
@@ -237,6 +237,9 @@
   .icon-btn-search {
     width: 336px;
   }
+  .search-img{
+    padding: 0px 1px 0px 0px;
+  }
 }
 @media screen and (min-width: 1214px) {
   .search-icon-btn {
@@ -251,7 +254,13 @@
     border-radius: 20px;
   }
   .header-search input {
-    padding: 0px 162px 3px 0px;
+    padding: 0px 162px 2px 1px;
+  }
+  .search-img{
+    padding: 0px 0px 5px 0px;  
+  }
+  .header-search img {
+    padding: 0px 0px 5px 12px;
   }
 }
 @media screen and (min-width: 1723px) {
